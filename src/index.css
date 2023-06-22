@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.home {
+    background-color: #2a65bd;
+}
+
+.skills {
+    background-color: #282828;
+}
+
+:root {
+    --primary: #2A65BD;
+    --secondary: #282828;
+    --text: #FDFEFB;
+}
