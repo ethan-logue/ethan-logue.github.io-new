@@ -58,9 +58,9 @@ function ParticleBackg() {
                     move: {
                         direction: "none",
                         enable: true,
-                        outModes: {
-                            default: "bounce",
-                        },
+                        // outModes: {
+                        //     default: "bounce",
+                        // },
                         random: false,
                         speed: 1,
                         straight: false,

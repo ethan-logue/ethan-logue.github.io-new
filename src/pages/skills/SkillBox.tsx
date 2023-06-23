@@ -12,8 +12,8 @@ interface SkillBoxProps {
 const SkillBox: React.FC<SkillBoxProps> = ({ skill, logo, d }) => {
 
     const [ref, inView] = useInView({
-        triggerOnce: true, // Trigger animation only once
-        threshold: 0.2, // Adjust the threshold value as per your requirement
+        triggerOnce: true, 
+        threshold: 0.2
     });
 
     const motionSkill = {
