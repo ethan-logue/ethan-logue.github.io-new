@@ -12,22 +12,22 @@ interface SkillBoxProps {
 const SkillBox: React.FC<SkillBoxProps> = ({ skill, logo, d }) => {
 
     const [ref, inView] = useInView({
-        triggerOnce: true, 
+        triggerOnce: true,
         threshold: 0.2
     });
 
     const motionSkill = {
         hidden: {
-          opacity: 0,
-          y: 100,
+            opacity: 0,
+            y: 100,
         },
         visible: {
-          opacity: 1,
-          y: 0,
-          transition: {
-            delay: d,
-            duration: 0.6,
-          },
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: d,
+                duration: 0.6,
+            },
         },
     };
 
