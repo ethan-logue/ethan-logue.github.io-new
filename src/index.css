@@ -6,6 +6,12 @@ body {
 :root {
     color-scheme: dark;
     --primary: #2A65BD;
-    --secondary: #282828;
+    --secondary: #1c1c1c;
+    --dark2: #282828;
+    --tertiary: #AF5452;
+    --quaternary: #E7C2A2;
+    --blue2: #1d5d84;
+    --blue3: #cdecff;
+    --blue4: #9cdaff;
     --text: #FDFEFB;
 }

@@ -1,23 +1,9 @@
-.bottom-circle {
-    width: 35vmax;
-    height: 35vmax;
-    position: absolute;
-    background-color: var(--secondary);
-    border-radius: 50%;
-    left: 50%;
-    top: 80%;
-    transform: translateX(-50%);
-    transition: all ease-in-out .3s;
+.home-bottom-circle {
+    top: 75%;
+    transform: translateX(-30%);
 }
 
-.bottom-outline {
-    width: 65vmax;
-    height: 65vmax;
-    position: absolute;
-    border: 1px solid var(--text);
-    border-radius: 50%;
-    left: 50%;
-    top: 80%;
-    transform: translateX(-50%);
-    transition: all ease-in-out .3s;
+.home-bottom-outline {
+    top: 65%;
+    transform: translateX(-20%);
 }
