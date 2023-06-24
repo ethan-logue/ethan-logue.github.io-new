@@ -1,9 +1,19 @@
+.home-top-circle {
+    top: -60%;
+    transform: translateX(-28%);
+}
+
+.home-top-outline {
+    top: -28%;
+    transform: translateX(17%);
+}
+
 .home-bottom-circle {
-    top: 75%;
-    transform: translateX(-30%);
+    top: 70%;
+    transform: translateX(-100%);
 }
 
 .home-bottom-outline {
-    top: 65%;
-    transform: translateX(-20%);
+    top: 60%;
+    transform: translateX(-100%);
 }

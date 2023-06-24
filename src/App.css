@@ -8,7 +8,7 @@
     font-family: 'DM Serif Text', serif;
     font-weight: 100;
     color: var(--text);
-    font-size: 12vw;
+    font-size: 10vw;
     text-align: center;
     margin: 0;
     height: 6.7rem;
@@ -49,6 +49,28 @@
     background-color: var(--primary);
 }
 
+.top-circle {
+    width: 65vmax;
+    height: 65vmax;
+    position: absolute;
+    background-color: var(--tertiary);
+    border-radius: 50%;
+    left: 50%;
+    transition: all ease-in .3s;
+    z-index: 10;
+}
+
+.top-outline {
+    width: 55vmax;
+    height: 55vmax;
+    position: absolute;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    left: 50%;
+    transition: all ease-in .3s;
+    z-index: 9;
+}
+
 .bottom-circle {
     width: 35vmax;
     height: 35vmax;
@@ -56,15 +78,17 @@
     background-color: var(--secondary);
     border-radius: 50%;
     left: 50%;
-    transition: all ease-in-out .3s;
+    transition: all ease-in .3s;
+    z-index: 10;
 }
 
 .bottom-outline {
     width: 65vmax;
     height: 65vmax;
     position: absolute;
-    border: 1px solid var(--text);
+    border: 2px solid var(--text);
     border-radius: 50%;
     left: 50%;
-    transition: all ease-in-out .3s;
+    transition: all ease-in .3s;
+    z-index: 9;
 }
