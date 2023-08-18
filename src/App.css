@@ -1,7 +1,8 @@
 .app {
-    overflow-y: scroll;
+    overflow: hidden scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;
+    scroll-behavior: smooth;
 }
 
 .page-title {
@@ -21,6 +22,7 @@
     height: 100vh;
     scroll-snap-align: center;
     overflow: hidden;
+    position: relative;
 }
 
 .page-container {
@@ -45,50 +47,7 @@
     z-index: 500;
 }
 
-.contact {
-    background-color: var(--primary);
-}
-
-.top-circle {
-    width: 65vmax;
-    height: 65vmax;
-    position: absolute;
-    background-color: var(--tertiary);
-    border-radius: 50%;
-    left: 50%;
-    transition: all ease-in .3s;
-    z-index: 10;
-}
-
-.top-outline {
-    width: 55vmax;
-    height: 55vmax;
-    position: absolute;
-    border: 2px solid var(--secondary);
-    border-radius: 50%;
-    left: 50%;
-    transition: all ease-in .3s;
-    z-index: 9;
-}
-
-.bottom-circle {
-    width: 35vmax;
-    height: 35vmax;
-    position: absolute;
-    background-color: var(--secondary);
-    border-radius: 50%;
-    left: 50%;
-    transition: all ease-in .3s;
-    z-index: 10;
-}
-
-.bottom-outline {
-    width: 65vmax;
-    height: 65vmax;
-    position: absolute;
-    border: 2px solid var(--text);
-    border-radius: 50%;
-    left: 50%;
-    transition: all ease-in .3s;
-    z-index: 9;
+img {
+    width: 100%;
+    max-width: max-content;
 }

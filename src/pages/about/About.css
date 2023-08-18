@@ -1,6 +1,6 @@
 .about-container {
-    position: relative;
-    top: 25%;
+    position: absolute;
+    bottom: 0;
     z-index: 500;
     width: 70%;
     padding: 2rem;
@@ -13,24 +13,5 @@
 .about-bio {
     font-size: 2vw;
     font-family: 'Roboto Serif', serif;
-}
-
-.about-top-circle {
-    top: -45%;
-    transform: translateX(0%);
-}
-
-.about-top-outline {
-    top: -12%;
-    transform: translateX(40%);
-}
-
-.about-bottom-circle {
-    top: 80.2%;
-    transform: translateX(-50%);
-}
-
-.about-bottom-outline {
-    top: 80%;
-    transform: translateX(-50%);
+    margin-bottom: 0;
 }

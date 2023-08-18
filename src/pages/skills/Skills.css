@@ -45,25 +45,25 @@
 }
 
 .css:hover {
-    box-shadow: inset 0px -250px 0px 0px rgba(2, 119, 189, .3);
+    box-shadow: inset 0px -500px 0px 0px rgba(2, 119, 189, .3);
 }
 
 .html:hover {
-    box-shadow: inset 0px -250px 0px 0px rgba(230, 81, 0, .3);
+    box-shadow: inset 0px -500px 0px 0px rgba(230, 81, 0, .3);
 }
 
 .tsx:hover {
-    box-shadow: inset 0px -250px 0px 0px rgba(0, 122, 204, .3);
+    box-shadow: inset 0px -500px 0px 0px rgba(0, 122, 204, .3);
 }
 
 .php:hover {
-    box-shadow: inset 0px -250px 0px 0px rgba(86, 100, 161, .3);
+    box-shadow: inset 0px -500px 0px 0px rgba(86, 100, 161, .3);
 }
 
 .py:hover {
-    box-shadow: inset 0px -250px 0px 0px rgba(254, 214, 85, .3);
+    box-shadow: inset 0px -500px 0px 0px rgba(254, 214, 85, .3);
 }
 
 .java:hover {
-    box-shadow: inset 0px -250px 0px 0px rgba(231, 111, 0, .3);
+    box-shadow: inset 0px -500px 0px 0px rgba(231, 111, 0, .3);
 }

@@ -1,19 +1,11 @@
-.home-top-circle {
-    top: -60%;
-    transform: translateX(-28%);
+.home > .page-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    position: relative;
 }
 
-.home-top-outline {
-    top: -28%;
-    transform: translateX(17%);
-}
-
-.home-bottom-circle {
-    top: 70%;
-    transform: translateX(-100%);
-}
-
-.home-bottom-outline {
-    top: 60%;
-    transform: translateX(-100%);
+.profile-photo {
+    border-radius: 50%;
 }

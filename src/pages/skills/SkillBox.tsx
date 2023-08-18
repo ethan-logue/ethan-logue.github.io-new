@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 interface SkillBoxProps {

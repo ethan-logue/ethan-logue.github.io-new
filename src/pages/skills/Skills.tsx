@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Skills.css';
 import ParticleBackg from '../../components/ParticleBackg';
 import SkillBox from './SkillBox';
