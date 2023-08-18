@@ -3,6 +3,7 @@ import './Skills.css';
 import ParticleBackg from '../../components/ParticleBackg';
 import SkillBox from './SkillBox';
 import { motion } from 'framer-motion';
+import Page from '../../components/Page';
 
 const Skills: React.FC = () => {
   const container = {
@@ -16,8 +17,7 @@ const Skills: React.FC = () => {
   }
 
   return (
-    <div className='page skills'>
-      <div className="page-container" >
+    <Page page={"skills"}>
         <ParticleBackg />
         <h2 className='page-title'>Skills</h2>
         <motion.div
@@ -33,8 +33,7 @@ const Skills: React.FC = () => {
           <SkillBox skill='py' logo='py.png' d={.9} />
           <SkillBox skill='java' logo='java.png' d={1.1} />
         </motion.div>
-      </div>
-    </div>
+    </Page>
   );
 };
 

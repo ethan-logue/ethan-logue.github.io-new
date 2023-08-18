@@ -6,15 +6,14 @@ import Contact from "./pages/contact/Contact";
 import About from "./pages/about/About";
 
 const App: React.FC = () => {
-  
-  return (
-    <div className="app">
-        <Home />
-        <About />
-        <Skills />
-        <Contact />
-    </div>
-  );
+    return (
+        <div className="app">
+            <Home />
+            <About />
+            <Skills />
+            <Contact />
+        </div>
+    );
 };
 
 export default App;
