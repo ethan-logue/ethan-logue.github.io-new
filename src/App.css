@@ -12,9 +12,11 @@
     font-size: 10vw;
     text-align: center;
     margin: 0;
-    height: 6.7rem;
-    line-height: 6.5rem;
     z-index: 100;
+}
+
+.page-title:hover {
+    cursor: default;
 }
 
 .page {
