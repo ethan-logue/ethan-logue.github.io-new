@@ -17,14 +17,14 @@ const Skills: React.FC = () => {
   }
 
   return (
-    <Page page={"skills"}>
+    <Page page={'skills'}>
         <ParticleBackg />
         <h2 className='page-title'>Skills</h2>
         <motion.div
           className='skill-container'
           variants={container}
-          initial="hidden"
-          animate="show"
+          initial='hidden'
+          animate='show'
         >
           <SkillBox skill='css' logo='css.png' d={.1} />
           <SkillBox skill='html' logo='html.png' d={.3} />

@@ -6,7 +6,8 @@ const About: React.FC = () => {
     return (
         <Page page={'about'} pageContainer={'about-container'} >
             <h1 className='page-title'>About Me</h1>
-            <p className='about-bio'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore accusamus quam error! Maiores quas ipsam corrupti, nisi aut eligendi blanditiis molestias iusto quasi quod officiis ad iste earum animi nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cumque, itaque, voluptatibus est nemo ipsa ab repellat, officia asperiores debitis sint culpa accusantium repudiandae. Modi consectetur odio vero natus unde?</p>
+            <p className='about-bio'>Hello there! I'm Ethan Logue, a Web & Mobile Computing undergraduate at RIT. </p>
+            <p className='about-bio'>I'm currently seeking summer co-op opportunities that allow me to apply my passion for front-end development. While I initially pursued a Computing and Information Technologies major, my journey led me to realize my true passion lies in creating seamless user experiences through web development. Blending my tech affinity with a creative edge, transitioning to Web & Mobile Computing was a natural fit. I'm committed to perfecting front-end development to create immersive, comfortable, and intuitive user interfaces.</p>
         </Page>
     );
 };

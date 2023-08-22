@@ -19,37 +19,13 @@
     cursor: default;
 }
 
-.page {
-    width: 100%;
-    height: 100vh;
-    scroll-snap-align: center;
-    overflow: hidden;
-    position: relative;
-}
-
-.page-container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: space-evenly;
-    position: relative;
-}
-
-.home {
-    background-color: var(--primary);
-}
-
-.about {
-    background-color: var(--primary);
-}
-
-.skills {
-    background-color: var(--secondary);
-    position: relative;
-    z-index: 500;
-}
-
 img {
     width: 100%;
     max-width: max-content;
+}
+
+p {
+    font-family: 'Roboto Serif', serif;
+    font-weight: 100;
+    color: var(--text);
 }

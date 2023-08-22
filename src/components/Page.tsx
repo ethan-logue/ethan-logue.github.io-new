@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import './Components.css';
 
 interface PageProps {
     page: string;
@@ -7,7 +7,7 @@ interface PageProps {
     pageContainer?: string;
 }
 
-const SkillBox: React.FC<PageProps> = ({ page, children, pageContainer = "page-container" }) => {
+const SkillBox: React.FC<PageProps> = ({ page, children, pageContainer = 'page-container' }) => {
     return (
         <div className={`page ${page}`}>
             <div className={pageContainer}>

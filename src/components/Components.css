@@ -1,0 +1,56 @@
+.page {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.blob-backg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.top-outer {
+    transform-origin: 73px 69px;
+    animation: rotate 30s linear infinite;
+}
+
+.top-inner {
+    transform-origin: 73px 69px;
+    animation: rotate 20s linear infinite;
+}
+
+.bottom-outer {
+    transform-origin: 134px 222px;
+    animation: rotate 30s linear infinite;
+}
+
+.bottom-inner {
+    transform-origin: 134px  222px;
+    animation: rotate 20s linear infinite;
+}
+
+.tsparticles {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}

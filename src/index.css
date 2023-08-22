@@ -5,15 +5,15 @@ body {
 
 :root {
     color-scheme: dark;
-    --primary: #2A65BD;
-    --secondary: #1c1c1c;
-    --dark2: #282828;
+    --text: #FDFEFB;
+    --primary: #1c1c1c;
+    --secondary: #2A65BD;
     --tertiary: #3DA9FC;
-    --red: #AF5452;
     --quaternary: #E7C2A2;
+    --red: #AF5452;
+    --dark2: #282828;
     --blue2: #1d5d84;
     --blue3: #cdecff;
     --blue4: #9cdaff;
     --blue5: #7ac1ff;
-    --text: #FDFEFB;
 }
