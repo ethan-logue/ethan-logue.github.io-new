@@ -11,10 +11,6 @@
     position: relative;
 }
 
-.subtitle {
-    font-size: 1.5vw;
-}
-
 .social-list {
     display: flex;
     align-items: center;

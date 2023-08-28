@@ -1,0 +1,34 @@
+nav {
+    position: fixed;
+    display: flex;
+    z-index: 5000;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 2rem;
+}
+
+.nav-item {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1vw;
+    margin: 0;
+    padding: 0.5rem 0;
+    transition: all .3s ease;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: var(--text);
+    transition: all .3s ease;
+}
+
+.nav-item.active a,
+.nav-item:not(.active) a:hover {
+    padding-left: 1rem;
+    box-shadow: 5px 0 0 var(--secondary) inset;
+}

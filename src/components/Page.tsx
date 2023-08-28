@@ -9,11 +9,11 @@ interface PageProps {
 
 const SkillBox: React.FC<PageProps> = ({ page, children, pageContainer = 'page-container' }) => {
     return (
-        <div className={`page ${page}`}>
+        <section id={page} className={`page ${page}`}>
             <div className={pageContainer}>
                 {children}
             </div>
-        </div>
+        </section>
     );
 };
 

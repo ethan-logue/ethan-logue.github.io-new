@@ -6,15 +6,15 @@ import { motion } from 'framer-motion';
 import Page from '../../components/Page';
 
 const Skills: React.FC = () => {
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.5
-      }
-    }
-  }
+  	const container = {
+		hidden: { opacity: 0 },
+		show: {
+			opacity: 1,
+			transition: {
+				staggerChildren: 0.5
+			}
+		}
+}
 
   return (
     <Page page={'skills'}>
