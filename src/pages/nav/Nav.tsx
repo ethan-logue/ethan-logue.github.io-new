@@ -13,10 +13,10 @@ const Nav: React.FC<NavProps> = ({ activeSection }) => {
     return (
         <nav>
             <ul className='nav-list'>
-                <NavLink activeSection={activeSection} page='home' d={.1} />
-                <NavLink activeSection={activeSection} page='about' d={.3} />
-                <NavLink activeSection={activeSection} page='skills' d={.5} />
-                <NavLink activeSection={activeSection} page='contact' d={.7} />
+                <NavLink activeSection={activeSection} page='home' d={.8} />
+                <NavLink activeSection={activeSection} page='about' d={.9} />
+                <NavLink activeSection={activeSection} page='skills' d={1.0} />
+                <NavLink activeSection={activeSection} page='contact' d={1.1} />
             </ul>
         </nav>
     );

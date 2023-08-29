@@ -1,10 +1,11 @@
 import React from 'react';
+import Page from '../../components/Page';
 
 const Contact: React.FC = () => {
     return (
-        <div className='page contact'>
-
-        </div>
+        <Page page={'contact'} >
+            
+        </Page>
     );
 };
 
