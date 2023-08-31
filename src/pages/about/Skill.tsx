@@ -1,19 +1,12 @@
 import React, { ReactElement } from 'react';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
 
 export interface SkillProps {
     skill: string;
     logo: ReactElement;
-    d?: number;
 }
 
-const Skill: React.FC<SkillProps> = ({ skill, logo, d }) => {
-
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.2
-    });
+const Skill: React.FC<SkillProps> = ({ skill, logo }) => {
 
     const motionSkill = {
         hidden: {
@@ -24,8 +17,7 @@ const Skill: React.FC<SkillProps> = ({ skill, logo, d }) => {
             opacity: 1,
             y: 0,
             transition: {
-                delay: d,
-                duration: 0.6,
+                delay: 0.2,
             },
         },
     };
@@ -33,9 +25,8 @@ const Skill: React.FC<SkillProps> = ({ skill, logo, d }) => {
     return (
         <motion.div
             className='skill-item'
-            ref={ref}
             initial='hidden'
-            animate={inView ? 'visible' : 'hidden'}
+            animate='visible'
             variants={motionSkill}
         >
             {logo}

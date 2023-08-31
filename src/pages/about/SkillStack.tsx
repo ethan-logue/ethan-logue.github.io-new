@@ -1,52 +1,107 @@
 import React from 'react';
 import Skill, { SkillProps } from './Skill';
-import { SiCss3, SiHtml5, SiPhp, SiPython, SiTypescript } from 'react-icons/si';
-import { FaJava } from 'react-icons/fa';
+import { SiAdobeillustrator, SiAdobephotoshop, SiAdobepremierepro, SiCss3, SiFilezilla, SiGit, SiHtml5, SiJavascript, SiMysql, SiPhp, SiPython, SiTypescript } from 'react-icons/si';
+import { FaFigma, FaJava, FaReact } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const SkillStack: React.FC = () => {
 
     const skills: SkillProps[] = [
         {
             skill: 'css',
-            logo: <SiCss3 />,
-            d: .1
+            logo: <SiCss3 />
         },
         {
             skill: 'html',
-            logo: <SiHtml5 />,
-            d: .3
+            logo: <SiHtml5 />
         },
         {
-            skill: 'tsx',
-            logo: <SiTypescript />,
-            d: .5
+            skill: 'react',
+            logo: <FaReact />
+        },
+        {
+            skill: 'typescript',
+            logo: <SiTypescript />
+        },
+        {
+            skill: 'figma',
+            logo: <FaFigma />
+        },
+        {
+            skill: 'premiere',
+            logo: <SiAdobepremierepro />
+        },
+        {
+            skill: 'photoshop',
+            logo: <SiAdobephotoshop />
+        },
+        {
+            skill: 'illustrator',
+            logo: <SiAdobeillustrator />
+        },
+        {
+            skill: 'javascript',
+            logo: <SiJavascript />
         },
         {
             skill: 'php',
-            logo: <SiPhp />,
-            d: .7
+            logo: <SiPhp />
         },
         {
-            skill: 'py',
-            logo: <SiPython />,
-            d: .9
+            skill: 'python',
+            logo: <SiPython />
         },
         {
             skill: 'java',
-            logo: <FaJava />,
-            d: 1.1
+            logo: <FaJava />
         },
-        
+        {
+            skill: 'sql',
+            logo: <SiMysql />
+        },
+        {
+            skill: 'git',
+            logo: <SiGit />
+        },     
+        {
+            skill: 'filezilla',
+            logo: <SiFilezilla />
+        },     
     ];
 
-    console.log(skills);
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+        threshold: 0.2
+    });
+
+    const skillContainer = {
+        hidden: {
+            opacity: 0,
+            y: 100,
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                when: "beforeChildren",
+                staggerChildren: 0.2,
+            },
+        },
+    };
 
     return (
-        <div className='skill-container'>
-            {skills.map((skill) => (
-                <Skill skill={skill.skill} logo={skill.logo} d={skill.d} />
+        <motion.div
+            className='skill-container'
+            ref={ref}
+            initial='hidden'
+            animate={inView ? 'visible' : 'hidden'}
+            variants={skillContainer}
+        >
+            {skills.map((skill, index) => (
+                <Skill key={index} {...skill} />
             ))}
-        </div>
+        </motion.div>
     );
 };
 
