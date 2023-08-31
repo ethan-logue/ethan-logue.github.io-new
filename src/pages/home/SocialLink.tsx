@@ -38,6 +38,9 @@ const SocialLink: React.FC<SocialLinkProps> = ({ link, icon, d }) => {
             ref={ref}
             initial='hidden'
             animate={inView ? 'visible' : 'hidden'}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.0 }}
+            transition={{ type: "spring", stiffness: 300, damping: 15 }}
             variants={socialLink}
             target='_blank'
             href={link}
