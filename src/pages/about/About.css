@@ -3,20 +3,21 @@
 }
 
 .about-container {
-    position: absolute;
-    bottom: 0;
-    z-index: 500;
-    width: 70%;
     padding: 2rem;
 }
 
 .about-container > h1 {
-    text-align: left;
     font-size: 6vw;
 }
 
 .about-bio {
     font-size: 1.5vw;
-    font-family: 'Roboto Serif', serif;
     margin-bottom: 0;
+}
+
+.about-subheading {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 100;
+    font-size: 3vw;
+    text-align: center;
 }

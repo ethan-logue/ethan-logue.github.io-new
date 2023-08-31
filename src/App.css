@@ -1,4 +1,5 @@
 .app {
+    background-color: var(--primary);
     overflow: hidden scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;

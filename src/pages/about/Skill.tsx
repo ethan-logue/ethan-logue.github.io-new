@@ -1,15 +1,15 @@
-import React from 'react';
-import './Skills.css';
+import React, { ReactElement } from 'react';
+import '../skills/Skills.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-interface SkillBoxProps {
+export interface SkillProps {
     skill: string;
-    logo: string;
+    logo: ReactElement;
     d?: number;
 }
 
-const SkillBox: React.FC<SkillBoxProps> = ({ skill, logo, d }) => {
+const Skill: React.FC<SkillProps> = ({ skill, logo, d }) => {
 
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -33,16 +33,16 @@ const SkillBox: React.FC<SkillBoxProps> = ({ skill, logo, d }) => {
 
     return (
         <motion.div
-            className={`skill-box ${skill}`}
+            className='skill'
             ref={ref}
             initial='hidden'
             animate={inView ? 'visible' : 'hidden'}
             variants={motionSkill}
         >
-            <h3 className='skill-title'>.{skill}</h3>
-            <img className='skill-logo' src={`./images/${logo}`} alt={`${skill} logo`} />
+            <h3 className='skill-title'>{skill}</h3>
+            {logo}
         </motion.div>
     );
 };
 
-export default SkillBox;
+export default Skill;
