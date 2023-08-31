@@ -42,11 +42,11 @@ const SkillStack: React.FC = () => {
     console.log(skills);
 
     return (
-        <>
-        {skills.map((skill) => (
-            <Skill skill={skill.skill} logo={skill.logo} d={skill.d} />
-        ))}
-        </>
+        <div className='skill-container'>
+            {skills.map((skill) => (
+                <Skill skill={skill.skill} logo={skill.logo} d={skill.d} />
+            ))}
+        </div>
     );
 };
 

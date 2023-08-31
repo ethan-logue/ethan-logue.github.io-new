@@ -1,10 +1,10 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Home from './pages/home/Home';
-import Skills from './pages/skills/Skills';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Nav from './pages/nav/Nav';
+import Projects from './pages/projects/Projects';
 
 const App: React.FC = () => {
     const [activeSection, setActiveSection] = useState('home');
@@ -45,7 +45,7 @@ const App: React.FC = () => {
             <Nav activeSection={activeSection} />
             <Home />
             <About />
-            <Skills />
+            <Projects />
             <Contact />
         </main>
     );

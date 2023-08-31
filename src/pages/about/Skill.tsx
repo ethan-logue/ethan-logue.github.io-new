@@ -1,5 +1,4 @@
 import React, { ReactElement } from 'react';
-import '../skills/Skills.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -33,14 +32,14 @@ const Skill: React.FC<SkillProps> = ({ skill, logo, d }) => {
 
     return (
         <motion.div
-            className='skill'
+            className='skill-item'
             ref={ref}
             initial='hidden'
             animate={inView ? 'visible' : 'hidden'}
             variants={motionSkill}
         >
-            <h3 className='skill-title'>{skill}</h3>
             {logo}
+            <p className='skill-title'>{skill}</p>
         </motion.div>
     );
 };
