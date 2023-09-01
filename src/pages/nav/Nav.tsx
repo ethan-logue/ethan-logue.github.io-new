@@ -15,7 +15,7 @@ const Nav: React.FC<NavProps> = ({ activeSection }) => {
             <ul className='nav-list'>
                 <NavLink activeSection={activeSection} page='home' d={.8} />
                 <NavLink activeSection={activeSection} page='about' d={.9} />
-                <NavLink activeSection={activeSection} page='skills' d={1.0} />
+                <NavLink activeSection={activeSection} page='projects' d={1.0} />
                 <NavLink activeSection={activeSection} page='contact' d={1.1} />
             </ul>
         </nav>

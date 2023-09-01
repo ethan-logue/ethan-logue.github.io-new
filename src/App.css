@@ -26,7 +26,7 @@ img {
 }
 
 p {
-    font-family: 'Roboto Serif', serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
     color: var(--text);
 }

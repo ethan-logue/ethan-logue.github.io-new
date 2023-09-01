@@ -10,7 +10,7 @@ const App: React.FC = () => {
     const [activeSection, setActiveSection] = useState('home');
 
     useEffect(() => {
-        const sections = ['home', 'about', 'skills', 'contact'];
+        const sections = ['home', 'about', 'projects', 'contact'];
     
         const observer = new IntersectionObserver(
             (entries) => {

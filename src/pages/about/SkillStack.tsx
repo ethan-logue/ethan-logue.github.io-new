@@ -1,6 +1,6 @@
 import React from 'react';
 import Skill, { SkillProps } from './Skill';
-import { SiAdobeillustrator, SiAdobephotoshop, SiAdobepremierepro, SiCss3, SiFilezilla, SiGit, SiHtml5, SiJavascript, SiMysql, SiPhp, SiPython, SiTypescript } from 'react-icons/si';
+import { SiAdobeillustrator, SiAdobephotoshop, SiAdobepremierepro, SiCss3, SiFilezilla, SiGit, SiHtml5, SiJavascript, SiMysql, SiPhp, SiPython, SiTypescript, SiVisualstudiocode } from 'react-icons/si';
 import { FaFigma, FaJava, FaReact } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -9,63 +9,67 @@ const SkillStack: React.FC = () => {
 
     const skills: SkillProps[] = [
         {
-            skill: 'css',
+            skill: 'CSS3',
             logo: <SiCss3 />
         },
         {
-            skill: 'html',
+            skill: 'HTML5',
             logo: <SiHtml5 />
         },
         {
-            skill: 'react',
+            skill: 'React',
             logo: <FaReact />
         },
         {
-            skill: 'typescript',
+            skill: 'TypeScript',
             logo: <SiTypescript />
         },
         {
-            skill: 'figma',
-            logo: <FaFigma />
-        },
-        {
-            skill: 'premiere',
-            logo: <SiAdobepremierepro />
-        },
-        {
-            skill: 'photoshop',
-            logo: <SiAdobephotoshop />
-        },
-        {
-            skill: 'illustrator',
-            logo: <SiAdobeillustrator />
-        },
-        {
-            skill: 'javascript',
+            skill: 'JavaScript',
             logo: <SiJavascript />
         },
         {
-            skill: 'php',
+            skill: 'PHP',
             logo: <SiPhp />
         },
         {
-            skill: 'python',
+            skill: 'Python',
             logo: <SiPython />
         },
         {
-            skill: 'java',
+            skill: 'Java',
             logo: <FaJava />
         },
         {
-            skill: 'sql',
+            skill: 'SQL',
             logo: <SiMysql />
         },
         {
-            skill: 'git',
+            skill: 'Premiere',
+            logo: <SiAdobepremierepro />
+        },
+        {
+            skill: 'Photoshop',
+            logo: <SiAdobephotoshop />
+        },
+        {
+            skill: 'Illustrator',
+            logo: <SiAdobeillustrator />
+        },
+        {
+            skill: 'VSCode',
+            logo: <SiVisualstudiocode />
+        },
+        {
+            skill: 'Figma',
+            logo: <FaFigma />
+        },
+        {
+            skill: 'Git',
             logo: <SiGit />
         },     
         {
-            skill: 'filezilla',
+            skill: 'FileZilla',
             logo: <SiFilezilla />
         },     
     ];
