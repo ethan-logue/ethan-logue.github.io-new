@@ -88,8 +88,7 @@ const SkillStack: React.FC = () => {
             opacity: 1,
             y: 0,
             transition: {
-                when: "beforeChildren",
-                staggerChildren: 0.2,
+                delayChildren: 0.2,
             },
         },
     };
