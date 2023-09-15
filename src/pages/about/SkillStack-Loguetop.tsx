@@ -21,72 +21,72 @@ const SkillStack: React.FC = () => {
         {
             skill: 'React',
             logo: <FaReact />,
-            fillColor: '#61DBFB'
+            fillColor: '#',
         },
         {
             skill: 'TypeScript',
             logo: <SiTypescript />,
-            fillColor: '#007ACC'
+            fillColor: '#007ACC',
         },
         {
             skill: 'JavaScript',
             logo: <SiJavascript />,
-            fillColor: '#F7DF1E'
+            fillColor: '#',
         },
         {
             skill: 'PHP',
             logo: <SiPhp />,
-            fillColor: '#5664A1'
+            fillColor: '#5664A1',
         },
         {
             skill: 'Python',
             logo: <SiPython />,
-            fillColor: '#FED655'
+            fillColor: '#FED655',
         },
         {
             skill: 'Java',
             logo: <FaJava />,
-            fillColor: '#E76F00'
+            fillColor: '#E76F00',
         },
         {
             skill: 'SQL',
             logo: <SiMysql />,
-            fillColor: '#E48E00'
+            fillColor: '#',
         },
         {
             skill: 'Premiere',
             logo: <SiAdobepremierepro />,
-            fillColor: '#9A9AFF'
+            fillColor: '#',
         },
         {
             skill: 'Photoshop',
             logo: <SiAdobephotoshop />,
-            fillColor: '#2DA9FF'
+            fillColor: '#',
         },
         {
             skill: 'Illustrator',
             logo: <SiAdobeillustrator />,
-            fillColor: '#FF9B00'
+            fillColor: '#',
         },
         {
             skill: 'VSCode',
             logo: <SiVisualstudiocode />,
-            fillColor: '#1C8DD4'
+            fillColor: '#',
         },
         {
             skill: 'Figma',
             logo: <FaFigma />,
-            fillColor: '#FF7362'
+            fillColor: '#',
         },
         {
             skill: 'Git',
             logo: <SiGit />,
-            fillColor: '#F05030'
+            fillColor: '#',
         },     
         {
             skill: 'FileZilla',
             logo: <SiFilezilla />,
-            fillColor: '#C00000'
+            fillColor: '#',
         },     
     ];
 

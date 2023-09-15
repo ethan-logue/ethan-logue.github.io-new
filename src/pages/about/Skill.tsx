@@ -5,9 +5,10 @@ import { useInView } from 'react-intersection-observer';
 export interface SkillProps {
     skill: string;
     logo: ReactElement;
+    fillColor?: string;
 }
 
-const Skill: React.FC<SkillProps> = ({ skill, logo }) => {
+const Skill: React.FC<SkillProps> = ({ skill, logo, fillColor }) => {
 
     const [ref, inView] = useInView({
         triggerOnce: true,
@@ -35,6 +36,11 @@ const Skill: React.FC<SkillProps> = ({ skill, logo }) => {
             initial='hidden'
             animate={inView ? 'visible' : 'hidden'}
             variants={motionSkill}
+            whileHover={{
+                    scale: 1.3, 
+                    transition: {type: 'tween', duration: 0.3}, 
+                    color: fillColor
+                }}
         >
             {logo}
             <p className='skill-title'>{skill}</p>
