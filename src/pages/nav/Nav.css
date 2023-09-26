@@ -46,7 +46,8 @@ nav {
     .nav-list {
         padding: 0.5rem;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 0.5rem;
     }
 
     .nav-item {
@@ -57,7 +58,7 @@ nav {
     .nav-item:not(.active) a:hover {
         padding-top: 0.5rem;
         padding-left: 0;
-        box-shadow: 0 5px 0 var(--secondary) inset;
+        box-shadow: 0 5px 0 var(--quaternary) inset;
         width: fit-content;
     }
 }

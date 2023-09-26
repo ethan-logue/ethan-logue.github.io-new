@@ -14,3 +14,9 @@
     padding: 2rem;
     position: relative;
 }
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 2rem 0;
+    }
+}

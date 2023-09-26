@@ -31,3 +31,13 @@
 .social-link:hover {
     color: var(--tertiary);
 }
+
+@media (max-width: 480px) {
+    .home .page-title {
+        font-size: 14vw;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+    }
+}
