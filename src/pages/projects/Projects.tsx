@@ -1,7 +1,6 @@
 import React from 'react';
 import './Projects.css';
 import Page from '../../components/Page';
-import { motion } from 'framer-motion';
 import ProjectItem, { ProjectItemProps } from './ProjectItem';
 
 const Projects: React.FC = () => {
@@ -13,6 +12,8 @@ const Projects: React.FC = () => {
 			tag: '2023 / Team Project',
 			image: './images/technet.jpg',
 			techStack: ['React', 'TypeScript', 'CSS', 'HTML', 'Figma'],
+			link: 'https://technet.rit.edu/',
+			d: .2,
 		},
 		{
 			name: 'Portfolio',
@@ -20,6 +21,8 @@ const Projects: React.FC = () => {
 			tag: '2023 / Personal Project',
 			image: './images/portfolio.jpg',
 			techStack: ['React', 'TypeScript', 'CSS', 'HTML'],
+			link: 'https://ethan-logue.github.io/',
+			d: .3,
 		},
 		{
 			name: 'Travel Site',
@@ -27,21 +30,19 @@ const Projects: React.FC = () => {
 			tag: '2023 / Class Project',
 			image: './images/travel-site.jpg',
 			techStack: ['JavaScript', 'CSS', 'HTML', 'PHP'],
+			link: 'https://people.rit.edu/~eml8469/ISTE240/final/index.php',
+			d: .4,
 		},
 	];
 
 	return (
 		<Page page={'projects'}>
 			<h1 className='page-title'>Projects</h1>
-			<motion.div className='project-container'
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{ duration: 0.5 }}
-			>
+			<div className='project-container'>
 				{projects.map((project, index) => (
 					<ProjectItem key={index} {...project} />
 				))}
-			</motion.div>
+			</div>
     	</Page>
   	);
 };

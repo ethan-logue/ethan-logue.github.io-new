@@ -16,7 +16,7 @@ nav {
 }
 
 .nav-item {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     margin: 0;
     padding: 0.5rem 0;
@@ -32,7 +32,7 @@ nav {
 .nav-item.active a,
 .nav-item:not(.active) a:hover {
     padding-left: 1rem;
-    box-shadow: 5px 0 0 var(--secondary) inset;
+    box-shadow: 5px 0 0 var(--quaternary) inset;
 }
 
 @media (max-width: 480px) {

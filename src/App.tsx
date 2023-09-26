@@ -46,7 +46,7 @@ const App: React.FC = () => {
             <Home />
             <About />
             <Projects />
-            <Contact />
+            {/* <Contact /> */}
         </main>
     );
 };

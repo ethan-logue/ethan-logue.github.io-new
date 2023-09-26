@@ -7,13 +7,7 @@ body {
     color-scheme: dark;
     --text: #FDFEFB;
     --primary: #1c1c1c;
-    --secondary: #2A65BD;
-    --tertiary: #b5b5b5;
-    --quaternary: #E7C2A2;
-    --red: #AF5452;
-    --dark2: #282828;
-    --blue2: #1d5d84;
-    --blue3: #cdecff;
-    --blue4: #9cdaff;
-    --blue5: #7ac1ff;
+    --secondary: #B5B5B5;
+    --tertiary: #3DA9FC;
+    --quaternary: #2A65BD;
 }

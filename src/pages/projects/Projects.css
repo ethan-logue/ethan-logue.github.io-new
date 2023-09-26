@@ -9,12 +9,20 @@
 .project-item {
     display: flex;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
     gap: 1rem;
     padding: 1rem;
     color: var(--text);
 }
 
 .project-header {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-header span {
     display: flex;
     gap: 1rem;
     align-items: baseline;
@@ -26,16 +34,30 @@
     border-radius: 0.5rem;
 }
 
+.project-details {
+    position: relative;
+}
+
 .project-title {
-    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
     margin: 0;
 }
 
 .project-tag {
-    color: var(--tertiary);
+    color: var(--secondary);
     font-size: 0.8rem;
     margin: 0;
+}
+
+.project-link {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+.project-link:hover {
+    color: var(--tertiary);
 }
 
 .project-description {
@@ -51,7 +73,6 @@
 }
 
 .tech-item {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: var(--tertiary);
+    color: var(--secondary);
     font-size: 0.8rem;
 }

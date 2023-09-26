@@ -12,7 +12,7 @@ const Nav: React.FC<NavProps> = ({ activeSection }) => {
         {activeSection, page: 'home', d: .8},
         {activeSection, page: 'about', d: .9},
         {activeSection, page: 'projects', d: 1.0},
-        {activeSection, page: 'contact', d: 1.1},
+        // {activeSection, page: 'contact', d: 1.1},
     ];
 
     return (
