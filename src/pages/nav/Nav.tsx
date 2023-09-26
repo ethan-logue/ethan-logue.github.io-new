@@ -1,7 +1,6 @@
 import React from 'react';
 import './Nav.css';
-import { motion } from 'framer-motion';
-import NavLink from './NavLink';
+import NavLink, { NavLinkProps } from './NavLink';
 
 interface NavProps {
     activeSection: string;
@@ -9,14 +8,24 @@ interface NavProps {
 
 const Nav: React.FC<NavProps> = ({ activeSection }) => {
 
+    const navLinks: NavLinkProps[] = [
+        {activeSection, page: 'home', d: .8},
+        {activeSection, page: 'about', d: .9},
+        {activeSection, page: 'projects', d: 1.0},
+        {activeSection, page: 'contact', d: 1.1},
+    ];
 
     return (
         <nav>
             <ul className='nav-list'>
-                <NavLink activeSection={activeSection} page='home' d={.8} />
-                <NavLink activeSection={activeSection} page='about' d={.9} />
-                <NavLink activeSection={activeSection} page='projects' d={1.0} />
-                <NavLink activeSection={activeSection} page='contact' d={1.1} />
+                {navLinks.map((link, i) => (
+                    <NavLink 
+                        key={i}
+                        activeSection={link.activeSection}
+                        page={link.page}
+                        d={link.d}
+                    />
+                ))}
             </ul>
         </nav>
     );

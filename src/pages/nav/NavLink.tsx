@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-interface NavLinkProps {
+export interface NavLinkProps {
     activeSection: string;
     page: string;
     d: number;

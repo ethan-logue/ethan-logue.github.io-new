@@ -11,6 +11,10 @@
     position: relative;
 }
 
+.home .page-title {
+    font-size: 10vw;
+}
+
 .social-list {
     display: flex;
     align-items: center;

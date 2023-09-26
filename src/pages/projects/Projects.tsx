@@ -2,11 +2,46 @@ import React from 'react';
 import './Projects.css';
 import Page from '../../components/Page';
 import { motion } from 'framer-motion';
+import ProjectItem, { ProjectItemProps } from './ProjectItem';
 
 const Projects: React.FC = () => {
+
+	const projects: ProjectItemProps[] = [
+		{
+			name: 'TechNet',
+			description: 'With a team of 4, we transformed an old static internal site into a dynamic React web app. I converted several pages from JavaScript to TypeScript and was in charge of implementing the redesigns from Figma and maintaining responsiveness. I utilized Framer Motion to create fluid interactablilty.',
+			tag: '2023 / Team Project',
+			image: './images/technet.jpg',
+			techStack: ['React', 'TypeScript', 'CSS', 'HTML', 'Figma'],
+		},
+		{
+			name: 'Portfolio',
+			description: 'Using React, TypeScript, and CSS, my portfolio acts as a visual and interactable extension of my resume. I extensively use React components and arrays to minimize repeated code and prioritize readability. I utilize Framer Motion to build fluid transitions and choreograph animations.  ',
+			tag: '2023 / Personal Project',
+			image: './images/portfolio.jpg',
+			techStack: ['React', 'TypeScript', 'CSS', 'HTML'],
+		},
+		{
+			name: 'Travel Site',
+			description: 'Created a travel site about a familiar place with over 15 pages that uses dropdown menus to navigate made using CSS. It utilizes PHP includes to minimize code repeat and JavaScript to place the header depending on how much content is on the screen. ',
+			tag: '2023 / Class Project',
+			image: './images/travel-site.jpg',
+			techStack: ['JavaScript', 'CSS', 'HTML', 'PHP'],
+		},
+	];
+
 	return (
 		<Page page={'projects'}>
-        
+			<h1 className='page-title'>Projects</h1>
+			<motion.div className='project-container'
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 0.5 }}
+			>
+				{projects.map((project, index) => (
+					<ProjectItem key={index} {...project} />
+				))}
+			</motion.div>
     	</Page>
   	);
 };

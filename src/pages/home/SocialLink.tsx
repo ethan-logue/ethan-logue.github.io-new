@@ -3,7 +3,7 @@ import './Home.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-interface SocialLinkProps {
+export interface SocialLinkProps {
     link: string;
     icon: ReactElement;
     d?: number;

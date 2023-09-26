@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer';
 export interface SkillProps {
     skill: string;
     logo: ReactElement;
-    fillColor?: string;
+    fillColor: string;
 }
 
 const Skill: React.FC<SkillProps> = ({ skill, logo, fillColor }) => {

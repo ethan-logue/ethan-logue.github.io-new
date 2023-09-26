@@ -1,0 +1,57 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: var(--text);
+}
+
+.project-header {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.project-cover {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+
+.project-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.project-tag {
+    color: var(--tertiary);
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.project-description {
+    font-size: 1rem;
+}
+
+.tech-stack {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.5rem;
+}
+
+.tech-item {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--tertiary);
+    font-size: 0.8rem;
+}
