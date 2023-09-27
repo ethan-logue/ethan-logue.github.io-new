@@ -32,7 +32,13 @@
     color: var(--tertiary);
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1500px) {
+    .social-link {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
     .home .page-title {
         font-size: 14vw;
     }

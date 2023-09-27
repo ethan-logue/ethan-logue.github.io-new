@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import Home from './pages/home/Home';
-import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Nav from './pages/nav/Nav';
 import Projects from './pages/projects/Projects';
@@ -20,7 +19,7 @@ const App: React.FC = () => {
                     }
                 });
             },
-            { rootMargin: '-50% 0px -50% 0px' } // Adjust rootMargin as needed
+            { rootMargin: '-50% 0px -50% 0px' }
         );
     
         sections.forEach((section) => {
@@ -46,7 +45,6 @@ const App: React.FC = () => {
             <Home />
             <About />
             <Projects />
-            {/* <Contact /> */}
         </main>
     );
 };

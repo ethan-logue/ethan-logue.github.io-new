@@ -35,7 +35,7 @@ nav {
     box-shadow: 5px 0 0 var(--quaternary) inset;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     nav {
         backdrop-filter: blur(3px);
         justify-content: flex-start;

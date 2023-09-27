@@ -29,3 +29,9 @@ p {
     font-family: 'Roboto', sans-serif;
     color: var(--text);
 }
+
+@media (max-width: 768px) {
+    .page-title {
+        margin-top: 1rem;
+    }
+}

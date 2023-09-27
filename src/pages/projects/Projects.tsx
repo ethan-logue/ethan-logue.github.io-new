@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
 		},
 		{
 			name: 'Portfolio',
-			description: 'Using React, TypeScript, and CSS, my portfolio acts as a visual and interactable extension of my resume. I extensively use React components and arrays to minimize repeated code and prioritize readability. I utilize Framer Motion to build fluid transitions and choreograph animations.  ',
+			description: 'Using React, TypeScript, and CSS, my portfolio acts as a visual and interactable extension of my resume. I extensively use React components and arrays to minimize repeated code and prioritize readability. I utilize Framer Motion to build fluid transitions and choreograph animations.',
 			tag: '2023 / Personal Project',
 			image: './images/portfolio.jpg',
 			techStack: ['React', 'TypeScript', 'CSS', 'HTML'],
@@ -26,12 +26,21 @@ const Projects: React.FC = () => {
 		},
 		{
 			name: 'Travel Site',
-			description: 'Created a travel site about a familiar place with over 15 pages that uses dropdown menus to navigate made using CSS. It utilizes PHP includes to minimize code repeat and JavaScript to place the header depending on how much content is on the screen. ',
+			description: 'Created a travel site about a familiar place with over 15 pages that uses dropdown menus to navigate made using CSS. It utilizes PHP includes to minimize code repeat and JavaScript to place the header depending on how much content is on the screen.',
 			tag: '2023 / Class Project',
 			image: './images/travel-site.jpg',
 			techStack: ['JavaScript', 'CSS', 'HTML', 'PHP'],
 			link: 'https://people.rit.edu/~eml8469/ISTE240/final/index.php',
 			d: .4,
+		},
+		{
+			name: 'Video Portfolio',
+			description: 'As one of my first projects, it was technically basic but I wanted something to showcase my video editing skills since I was doing commission work on Roblox. I exercised CSS grid to create a well organized and appealing site. I also incorporated some JavaScript to create the accordion effect, although since it was my first time I had a lot of help from others on that part.',
+			tag: '2022 / Personal Project',
+			image: './images/video-portfolio.jpg',
+			techStack: ['CSS', 'HTML'],
+			link: 'https://people.rit.edu/~eml8469/iste140/Roblox%20Application/',
+			d: .5,
 		},
 	];
 
