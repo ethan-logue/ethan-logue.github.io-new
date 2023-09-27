@@ -1,7 +1,6 @@
 .project-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 2rem;
     overflow: hidden scroll;
@@ -84,19 +83,25 @@
     font-size: 0.8rem;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .project-item {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    .project-title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
     .project-cover {
         width: 7rem;
         height: 7rem;
     }
 
     .project-title {
-        font-size: 1.25rem;
+        font-size: 1.15rem;
     }
 
     .project-tag {
